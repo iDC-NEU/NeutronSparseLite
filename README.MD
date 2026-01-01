@@ -1,6 +1,6 @@
 # NeutronSparse
 
-# 0. Environment Setup
+## 0. Environment Setup
 We use **openEuler 2.10.11** as the operating system and **CANN Toolkit 8.2.rc1** for the Ascend backend.
 
 The Python packages and corresponding versions required for NeutronSparse are as follows:
@@ -10,7 +10,7 @@ The Python packages and corresponding versions required for NeutronSparse are as
 | **Python** | 3.11 |
 | **MindSpore** | 2.7.0.rc1 |
 
-# 1. Compiling
+## 1. Compiling
 Before running the project, you must compile the custom C++ operators.
 
 Enter the compilation directory
@@ -25,7 +25,7 @@ Compile the extension in-place
 
 ```python setup.py build_ext --inplace```
 
-# 2. Get Dataset
+## 2. Get Dataset
 Navigate to the data directory and extract the dataset archive.
 
 Go to the data directory (assuming you are currently in prepare/sgt_cpp)
@@ -36,7 +36,7 @@ Extract the data
 
 ```tar -zxvf data.tar.gz```
 
-# 3. Preprocess Data
+## 3. Preprocess Data
 After extracting the data, navigate to the prepare folder to run the preprocessing scripts.
 
 Go back to the ```prepare``` folder
@@ -58,7 +58,7 @@ Go back to the ```prepare``` folder
    ```python NeutronSparsePrepare.py```
 
 
-# 4. Run NeutronSparse
+## 4. Run NeutronSparse
 Once compilation and data preparation are complete, you can run the main program.
 
 Go back to the project root, then enter the run folder
